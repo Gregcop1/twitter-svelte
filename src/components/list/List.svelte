@@ -5,7 +5,7 @@
 </script>
 
 <div class="tweet-list">
-    {#each tweets as tweet}
+    {#each tweets as tweet, index (tweet.date)}
         <ListItem tweet={tweet} />
     {/each}
 </div>

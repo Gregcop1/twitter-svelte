@@ -1,5 +1,6 @@
-import { writable } from "svelte/store";
+import { derived, writable } from "svelte/store";
 import tweetsHelper from "../helpers/tweets";
+import {user} from "./user";
 
 const createTweets = () => {
   const {subscribe, update} = writable(tweetsHelper.generateTweets(30));
@@ -23,3 +24,7 @@ const createTweets = () => {
 };
 
 export const tweets = createTweets();
+
+export const currentUserTweets = derived([user, tweets], ([$u, $t]) => {
+  return $t.filter(item => item.author.account === $u.account);
+});

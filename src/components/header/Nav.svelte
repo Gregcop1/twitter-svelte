@@ -10,7 +10,7 @@
             </a>
         </li>
         <li>
-            <a href='/my-tweets' class="nav-item">
+            <a href='/my-tweets' class="nav-item" class:nav-item--active={segment === 'my-tweets'}>
                 <i class="fa fa-bell-o"></i> Mes tweets
             </a>
         </li>
