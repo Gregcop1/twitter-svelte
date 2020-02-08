@@ -1,7 +1,8 @@
 import { writable } from "svelte/store";
+import tweetsHelper from "../helpers/tweets";
 
 const createTweets = () => {
-  const {subscribe, update} = writable([]);
+  const {subscribe, update} = writable(tweetsHelper.generateTweets(30));
 
   return {
     subscribe,
