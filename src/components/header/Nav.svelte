@@ -5,12 +5,12 @@
 <nav class="main-nav">
     <ul>
         <li>
-            <a href='/' class="nav-item" class:nav-item--active={segment === undefined}>
+            <a href='.' class="nav-item" class:nav-item--active={segment === undefined}>
                 <i class="fa fa-home"></i> Accueil
             </a>
         </li>
         <li>
-            <a href='/my-tweets' class="nav-item" class:nav-item--active={segment === 'my-tweets'}>
+            <a href='my-tweets' class="nav-item" class:nav-item--active={segment === 'my-tweets'}>
                 <i class="fa fa-bell-o"></i> Mes tweets
             </a>
         </li>

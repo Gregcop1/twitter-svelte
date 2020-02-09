@@ -14,15 +14,15 @@
         <div class="profile-relation">
             <p class="col col-30">
                 Tweets
-                <a href="/my-tweets">{$user.tweetCount}</a>
+                <a href="my-tweets">{$user.tweetCount}</a>
             </p><!--
             --><p class="col col-40">
                 Abonnements
-                <a href="/my-tweets">{$user.subscriber}</a>
+                <a href="my-tweets">{$user.subscriber}</a>
             </p><!--
             --><p class="col col-30">
                 Abonnés
-                <a href="/my-tweets">{$user.subscription}</a>
+                <a href="my-tweets">{$user.subscription}</a>
             </p>
         </div>
     </div>
